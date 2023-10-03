@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/rendirse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:backgroundTint="#4CAF50"
+        android:onClick="rendirse"
+        android:shadowColor="#4CAF50"
+        android:text="|ME RENDO|"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:rippleColor="#4CAF50"
+        app:strokeColor="#4CAF50" />
+
+    <Button
+        android:id="@+id/tirar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="319dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="318dp"
+        android:backgroundTint="#4CAF50"
+        android:onClick="tirarDado"
+        android:text="¡JOGUE OS DADOS!"
+        android:textColorHighlight="#4CAF50"
+        android:textColorHint="#4CAF50"
+        android:textColorLink="#4CAF50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rendirse"
+        app:strokeColor="#4CAF50" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="227dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="16dp"
+        android:text="JOGADOR 1"
+        android:textAlignment="center"
+        android:textColor="#4CAF50"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="44dp"
+        android:text="JOGADOR 2"
+        android:textAlignment="center"
+        android:textColor="#4CAF50"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/resultado1"
+        android:layout_width="119dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="4dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/resultado2"
+        android:layout_width="119dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="76dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/acum1"
+        android:layout_width="63dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="44dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="48sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resultado1" />
+
+    <TextView
+        android:id="@+id/acum2"
+        android:layout_width="64dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="104dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resultado2" />
+
+    <TextView
+        android:id="@+id/dado"
+        android:layout_width="107dp"
+        android:layout_height="105dp"
+        android:layout_marginStart="330dp"
+        android:layout_marginEnd="330dp"
+        android:background="#8BC34A"
+        android:shadowColor="#000000"
+        android:textAlignment="center"
+        android:textColor="#FFEB3B"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorLink="#FFEB3B"
+        android:textSize="70sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498" />
+
+    <Button
+        android:id="@+id/reiniciar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#4CAF50"
+        android:onClick="nuevaPartida"
+        android:text="Novo jogo"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ganador"
+        android:layout_width="266dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="4dp"
+        android:textAlignment="center"
+        android:textColor="#4CAF50"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reiniciar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
